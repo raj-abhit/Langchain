@@ -24,3 +24,24 @@ The repo is structured into key folders representing LangChain concepts:
 - `Tools/` - tool usage for agent workflows.
 - `docs/` - reference docs and notes for this repo.
 - `output/` - generated output artifacts from runs.
+
+## Structure Graph
+
+```mermaid
+graph TD
+    A[Langchain]
+    A --> B[LLMs]
+    A --> C[ChatModels]
+    A --> D[prompts]
+    A --> E[OutputParser]
+    A --> F[chains]
+    A --> G[runnables]
+    A --> H[docloader]
+    A --> I[TextSplitters]
+    A --> J[EmbeddedModels]
+    A --> K[vector_store]
+    A --> L[retrievers]
+    A --> M[Tools]
+    A --> N[docs]
+    A --> O[output]
+```
